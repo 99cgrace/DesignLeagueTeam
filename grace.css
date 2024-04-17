@@ -7,3 +7,15 @@
 h1{
   font-family: "PT Sans Narrow", sans-serif;
 }
+* ::before, ::after{
+  margin: 0;
+  paddding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --accent-color: #f00fd;
+  --bg-color: #fccfd;
+  --main-font: "PT Sans Narrow", sans-serif;
+  --sub-font: "arial", sans-serif;
+  --g-ratio: 1.618;
+}
