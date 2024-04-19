@@ -8,3 +8,7 @@ setTimeout(() => {
   loader.parentNode.removeChild(loader);
   document.body.style.overflow = 'initial';
 }, 1000);
+  const coinSfx = new Sfx('sfx/Mario Coin.wav')
+  const pipeSfx = new Sfx('sfx/Mario Pipe.wav')
+  const 
+  const
