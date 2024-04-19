@@ -1,25 +1,22 @@
+/*Initialize
+===========*/
 
-
-
-
-
-
-h1{
-  font-family: "ruslan display", sans-serif;
-}
-
-*, ::before, ::after{
+*,
+::before
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+
+:root {
   --accent-color: #34495e;
-  --bg-color: #ecf0f1;
-  --main-font: "Ruslan Display", sans-serif"
-  --sub-font: "arial", sans-serif;
-  --g-ratio: 2.618;
+--bg-color: #ecf0f1;
+--main-font: 'monsterrat', sans-serif;
+--sub-front: 'work sans', sans-serif;
+--g-ratio:1.618;
 }
+
 body{
   font-family: var(--sub-font);
   font-weight: 300;
@@ -27,6 +24,7 @@ body{
   color:#111;
   font-size: 1.2em;
 }
+
 hr{
   margin-top: 0.5rem;
   width: 70px;
@@ -34,13 +32,19 @@ hr{
   background-color:#34495e;
   border: none;
 }
-h1,h2,h3, .title{
+
+h1,
+h2,
+h3, 
+.title{
 font-family: var(--main-font);
   font-weight:900;
 }
+
 .title{
 color: var(--accent-color);
 }
+
 .wrapper {
   display: flex;
   flex-direction:column;
@@ -51,6 +55,23 @@ color: var(--accent-color);
   margin: 0 auto;
   background-color: inherit;
 }
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+}
+
+.Lab-info h2,
+.Lab-info h3 {
+  font-weight: initial;
+}
+
+
+
 /* Main Content
 ===========*/
+.top-containter {
+  display: flex;
+  width: 100%;
+}
 
