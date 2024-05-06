@@ -1,0 +1,145 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>
+basic javascript
+</title>
+</head>
+
+<style>
+body{
+
+
+}
+
+div{
+background-color:red;
+width:100px;
+height: 100px;
+}
+
+#animate{
+background-color:beige;
+width:50px;
+height:50px;
+position: absolute;
+}
+
+#container{
+background-color:pink;
+width:300px;
+height:300px;
+position: relative;
+}
+
+h1{
+font-size: 0.7em;
+}
+
+p{
+font-family: Apple Chancery, 'cursive';
+color: #77S4F;
+
+#banner:
+color: #513C64;
+  margin: 25px;
+  padding: 10px;
+  border: 3px solid #617859;
+  box-shadow: 1px 3px 30px 1px #5f8163;
+  text-transform: capitalize;
+  text-shadow: 2px 1px #000000 ;
+  font-family: fantasy;
+  height: 120px;
+  font-size: 10px;
+  text-align: right;
+  font-style: oblique;
+}
+
+</style>
+<p id="demo"> this will change with JS</p>
+<button type="button" onclick="ClickMe()"> meow</button>
+
+<body>
+
+<button type="button" onclick="SkibidiRizz()"> divide </button>
+<button type="button" onclick="multiply()"> multiply </button>
+<button type="button" onclick="subtract()"> subtraction </button>
+<button type="button" onclick="fanumtax()"> sentence </button>
+
+
+<div onmousemove="moveFunk(event)" onmouseout="clearCoor()"></div>
+<button type="button" onclick="moveIt()">yipee</button>
+<div id="container">
+
+<div id="animate">
+
+</div>
+
+</div>
+
+
+
+
+<script>
+function ClickMe(){
+document.getElementById("demo").innerHTML=5+3
+}
+
+
+
+function SkibidiRizz(){
+document.getElementById("demo").innerHTML= 25/5
+}
+
+
+function multiply(){
+document.getElementById("demo").innerHTML= 40*3
+}
+
+function subtract(){
+document.getElementById("demo").innerHTML= 7-5
+}
+
+
+function fanumtax(){
+document.getElementById("demo").innerHTML= "ermm what the sigma"
+}
+
+function moveFunk(e){
+let x = e.clientX
+let y = e.clientY
+let coor = "Coordinates: ("+x+","+y+")"
+document.getElementById("demo").innerHTML = coor
+}
+
+function clearCoor(){
+document.getElementById("demo").innerHTML="   "
+}
+
+function moveIt(){
+let id=null
+const elem=document.getElementById("animate");
+let pos=0
+clearInterval(id)
+id=setInterval(frame,5)
+function frame(){
+if(pos==350){
+clearInterval(id)
+}
+else{
+pos++
+elem.style.top=pos+"px"
+elem.style.left=pos+"px"
+}
+
+
+}
+}
+
+</script>
+
+
+
+
+</body>
+</html>
